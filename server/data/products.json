@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "CapCut Pro 1 Bulan",
+        "price": 25000,
+        "stock": 10,
+        "status": "tersedia"
+    },
+    {
+        "id": 2,
+        "name": "Canva Pro 1 Tahun",
+        "price": 75000,
+        "stock": 5,
+        "status": "tersedia"
+    },
+    {
+        "id": 3,
+        "name": "Spotify Premium 3 Bulan",
+        "price": 45000,
+        "stock": 8,
+        "status": "tersedia"
+    },
+    {
+        "id": 4,
+        "name": "Netflix Premium 1 Bulan",
+        "price": 35000,
+        "stock": 0,
+        "status": "habis"
+    }
+]
