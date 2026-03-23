@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZALLSTORE - Dashboard User</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+    <nav class="bottom-nav">
+        <a href="/" class="nav-item" data-link><ion-icon name="home-outline"></ion-icon><span>Home</span></a>
+        <a href="/premium.html" class="nav-item" data-link><ion-icon name="diamond-outline"></ion-icon><span>Premium</span></a>
+        <a href="/jasa.html" class="nav-item" data-link><ion-icon name="camera-outline"></ion-icon><span>Jasa</span></a>
+        <a href="/dashboard.html" class="nav-item active" data-link><ion-icon name="person-outline"></ion-icon><span>Dashboard</span></a>
+        <a href="/admin.html" class="nav-item" data-link><ion-icon name="shield-outline"></ion-icon><span>Admin</span></a>
+    </nav>
+
+    <main class="container">
+        <div class="dashboard-container">
+            <div id="login-section" class="glass-card">
+                <h2>🔐 Login User</h2>
+                <input type="text" id="login-username" placeholder="Username" autocomplete="off">
+                <input type="password" id="login-password" placeholder="Password">
+                <button id="btn-login" class="btn-primary">Login</button>
+                <p class="demo-hint">Demo: user1 / pass123 atau user2 / pass123</p>
+            </div>
+
+            <div id="user-info" class="glass-card" style="display:none;">
+                <h2>👤 Profile User</h2>
+                <p><strong>Username:</strong> <span id="display-username"></span></p>
+                <p><strong>Email:</strong> <span id="display-email"></span></p>
+                <p><strong>Member sejak:</strong> <span id="display-member"></span></p>
+                <button id="btn-logout" class="btn-secondary">Logout</button>
+            </div>
+
+            <div id="order-history" class="glass-card" style="display:none;">
+                <h3>📦 Riwayat Pesanan</h3>
+                <div id="history-list"></div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
