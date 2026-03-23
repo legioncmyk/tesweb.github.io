@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>ZALLSTORE DIGITAL HUB - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+    <nav class="bottom-nav">
+        <a href="/" class="nav-item" data-link>
+            <ion-icon name="home-outline"></ion-icon>
+            <span>Home</span>
+        </a>
+        <a href="/premium.html" class="nav-item" data-link>
+            <ion-icon name="diamond-outline"></ion-icon>
+            <span>Premium</span>
+        </a>
+        <a href="/jasa.html" class="nav-item" data-link>
+            <ion-icon name="camera-outline"></ion-icon>
+            <span>Jasa</span>
+        </a>
+        <a href="/dashboard.html" class="nav-item" data-link>
+            <ion-icon name="person-outline"></ion-icon>
+            <span>Dashboard</span>
+        </a>
+        <a href="/admin.html" class="nav-item" data-link>
+            <ion-icon name="shield-outline"></ion-icon>
+            <span>Admin</span>
+        </a>
+    </nav>
+
+    <main class="container">
+        <div class="hero fade-up">
+            <div class="glow-card">
+                <h1 class="gradient-text">ZALLSTORE <span>DIGITAL HUB</span></h1>
+                <p class="tagline">Marketplace Akun Premium & Jasa Kreatif Terpercaya</p>
+                <div class="hero-buttons">
+                    <a href="/premium.html" class="btn-primary" data-link>🛒 Beli Akun Premium</a>
+                    <a href="/jasa.html" class="btn-secondary" data-link>🎬 Pesan Jasa Sekarang</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card glass-card">
+                <ion-icon name="flash-outline"></ion-icon>
+                <h3>Akun Premium</h3>
+                <p>CapCut Pro, Canva, Spotify, Netflix & 100+ produk digital</p>
+            </div>
+            <div class="feature-card glass-card">
+                <ion-icon name="videocam-outline"></ion-icon>
+                <h3>Videografi & Fotografi</h3>
+                <p>Editing cinematic, video produk, foto komersial</p>
+            </div>
+            <div class="feature-card glass-card">
+                <ion-icon name="chatbubbles-outline"></ion-icon>
+                <h3>Order via WhatsApp</h3>
+                <p>Respons cepat & pembayaran aman via DANA</p>
+            </div>
+        </div>
+
+        <section class="preview-section">
+            <h2 class="section-title">🔥 Best Seller Premium</h2>
+            <div id="preview-products" class="products-grid"></div>
+        </section>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
