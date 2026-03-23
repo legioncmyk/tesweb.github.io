@@ -1,0 +1,77 @@
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 5px rgba(255,46,46,0.3);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255,46,46,0.6);
+    }
+}
+
+body {
+    animation: fadeZoom 0.5s ease-out;
+}
+
+.container {
+    animation: slideIn 0.4s ease-out;
+}
+
+.product-card, .jasa-card, .feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover, .jasa-card:hover, .feature-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    animation: glowPulse 0.5s ease-out;
+}
+
+.btn-primary, .btn-secondary {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-spinner::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgba(255,46,46,0.3);
+    border-top-color: #ff2e2e;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.glass-card {
+    transition: all 0.4s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+}
